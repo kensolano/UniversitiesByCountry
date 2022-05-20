@@ -27,7 +27,7 @@ async function fetchData() {
     let url =
       "http://universities.hipolabs.com/search?" +
       new URLSearchParams({
-        country: textField.value,
+        country: textField.value.trim(),
       });
 
     try {
